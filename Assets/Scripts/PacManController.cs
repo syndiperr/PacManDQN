@@ -18,11 +18,15 @@ public class PacManController : MonoBehaviour {
 	}
 
     private void FixedUpdate() {
-        // Only moving in one direction (whether its side-by-side or up & down
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)) {
-            player.velocity = new Vector2(0, Input.GetAxis("Vertical"));
-        } else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)) {
-            player.velocity = new Vector2(Input.GetAxis("Horizontal"), 0);
+        // Only moving in one direction (whether its side-by-side or up & down)
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            player.velocity = new Vector2(0, speed);
+        } else if (Input.GetKey(KeyCode.DownArrow)) {
+            player.velocity = new Vector2(0, -speed);
+        } else if (Input.GetKey(KeyCode.LeftArrow)) {
+            player.velocity = new Vector2(-speed, 0);
+        } else if (Input.GetKey(KeyCode.RightArrow)) {
+            player.velocity = new Vector2(speed, 0);
         }
     }
 }

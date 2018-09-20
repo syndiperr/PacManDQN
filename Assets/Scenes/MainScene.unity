@@ -190,7 +190,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1727244760
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +284,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
 --- !u!1 &1789003698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1430818097079078, guid: e2e82b20930cb9c49af8abcc5e9f2157,
@@ -324,4 +322,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
->>>>>>> PacMan
